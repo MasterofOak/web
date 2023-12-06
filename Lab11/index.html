@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            button {
+                text-align: center;
+                width: 20%;
+                height: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="flex">FLEX</button>
+        <button id="grid">GRID</button>
+        <script>
+            const flex = document.getElementById('flex');
+            const grid = document.getElementById('grid');
+            flex.addEventListener('click', () => {
+                return (window.location = 'flex');
+            });
+            grid.addEventListener('click', () => {
+                return (window.location = 'grid');
+            });
+        </script>
+    </body>
+</html>

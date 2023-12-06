@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100vh;
+            }
+            .block {
+                text-align: center;
+                margin: 3px;
+                border: 1px solid gray;
+            }
+            .side-container {
+                height: 75%;
+                width: 25%;
+            }
+            #side {
+                height: 100%;
+                background-color: gray;
+            }
+            .block-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                height: 75%;
+                width: 75%;
+            }
+            .block-container #header {
+                width: 100%;
+                height: 25%;
+                background-color: brown;
+            }
+            .block-block-con #block-1 {
+                flex: 1 0 auto;
+                height: 49%;
+                background-color: blue;
+            }
+            .block-block-con #block-2 {
+                flex: 1 0 auto;
+                height: 49%;
+                background-color: aqua;
+            }
+            .block-container #block-3 {
+                flex: 1 0 auto;
+                height: 74%;
+                background-color: yellow;
+            }
+            .block-block-con #block-4 {
+                flex: 1 1 100%;
+                height: 96.5%;
+                background-color: greenyellow;
+            }
+            .block-block-con {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 50%;
+                height: 50%;
+            }
+            #footer {
+                margin-top: 6px;
+                height: 25%;
+                width: 100%;
+                background-color: green;
+            }
+            @media (max-width: 500px) {
+                .block-container {
+                    width: 100%;
+                }
+                .block-block-con {
+                    width: 100%;
+                }
+                .block-block-con #block-1 {
+                    height: 30%;
+                }
+                .block-block-con #block-2 {
+                    height: 30%;
+                }
+                .block-block-con #block-4 {
+                    height: 60%;
+                }
+                .block-container #block-3 {
+                    flex: 1 auto;
+                    height: 25%;
+                }
+                .side-container {
+                    display: none;
+                }
+                #footer {
+                    margin-top: 10px;
+                }
+            }
+            @media (min-width: 501px) and (max-width: 1200px) {
+                .block-container {
+                    width: 100%;
+                    height: 75%;
+                }
+                #header {
+                    height: 20%;
+                }
+                .block-block-con {
+                    width: 100%;
+                    height: 45%;
+                }
+                .block-block-con #block-1 {
+                    height: 50%;
+                }
+                .block-block-con #block-2 {
+                    height: 50%;
+                }
+                .block-block-con #block-4 {
+                    height: 50%;
+                }
+                .block-container #block-3 {
+                    height: 50%;
+                }
+                .side-container {
+                    display: none;
+                }
+                #footer {
+                    height: 20%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="block-container">
+                <div id="header" class="block">header</div>
+                <div class="block-block-con">
+                    <div id="block-1" class="block">block-1</div>
+                    <div id="block-2" class="block">block-2</div>
+                    <div id="block-4" class="block">block-4</div>
+                </div>
+                <div id="block-3" class="block">block-3</div>
+            </div>
+            <div class="side-container">
+                <div id="side" class="block">side</div>
+            </div>
+            <div id="footer" class="block">footer</div>
+        </div>
+    </body>
+</html>
