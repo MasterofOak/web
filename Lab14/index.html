@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            button {
+                text-align: center;
+                width: 20%;
+                height: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="Practise-1">Practise-1</button>
+        <button id="Practise-2">Practise-2</button>
+        <script>
+            const flex = document.getElementById('Practise-1');
+            const grid = document.getElementById('Practise-2');
+            flex.addEventListener('click', () => {
+                return (window.location = 'Practise-1');
+            });
+            grid.addEventListener('click', () => {
+                return (window.location = 'Practise-2');
+            });
+        </script>
+    </body>
+</html>
